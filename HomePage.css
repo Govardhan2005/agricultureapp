@@ -1,0 +1,150 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f7f4f1;
+  }
+  
+  /* Navigation Bar */
+  nav {
+    background-color: #406343;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  nav .nav-links {
+    display: flex;
+  }
+  
+  nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 22px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    background-color: #2f4f33; /* Darker shade for hover */
+    color: #f2f2f2;
+  }
+  
+  /* Right Section for Login and Register */
+  .nav-right {
+    display: flex;
+  }
+  
+  .nav-right a {
+    padding: 16px 22px;
+  }
+  
+  /* Banner Section */
+  .banner {
+    background-image: url('src/images/home.jpg');  /* Adjust path if needed */
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .banner h2 {
+    font-size: 3.5rem;
+  }
+  
+  .banner p {
+    font-size: 1.5rem;
+  }
+  
+  /* Main Section */
+  .main-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 3rem auto;
+    max-width: 1200px;
+  }
+  
+  .section {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    width: 30%;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  
+  .section:hover {
+    transform: translateY(-5px);
+  }
+  
+  .section h3 {
+    color: #406343;
+    margin-bottom: 1.2rem;
+    font-size: 1.8rem;
+  }
+  
+  .section p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .section a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 24px;
+    color: white;
+    background-color: #5b8a72;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .section a:hover {
+    background-color: #476b58;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #5b8a72;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+    font-size: 1rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .main-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .section {
+      width: 80%;
+      margin-bottom: 1.5rem;
+    }
+  
+    .banner h2 {
+      font-size: 2.5rem;
+    }
+  
+    .banner p {
+      font-size: 1.2rem;
+    }
+  
+    nav {
+      flex-direction: column;
+    }
+  }
+  
